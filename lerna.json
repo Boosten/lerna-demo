@@ -5,6 +5,7 @@
   "useWorkspaces": true,
   "command": {
     "publish": {
+      "registry": "http://localhost:4873/",
       "createRelease": "github",
       "allowBranch": "master",
       "conventionalCommits": true,
