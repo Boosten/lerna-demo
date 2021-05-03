@@ -1,6 +1,6 @@
 {
   "name": "dummy-package-a",
-  "version": "0.0.0",
+  "version": "0.0.3",
   "description": "> TODO: description",
   "author": "Kevin Boosten <kboosten@ilionx.com>",
   "homepage": "https://github.com/boosten/lerna-demo/tree/main/packages/dummy-package-a#readme",
