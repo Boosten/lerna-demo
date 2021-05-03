@@ -18,5 +18,3 @@ jobs:
         run: yarn build
       - name: Run Unit Tests
         run: yarn test
-      - name: Execute the schematic against the sandbox
-        run: yarn test:sandbox

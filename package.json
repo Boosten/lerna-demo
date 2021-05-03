@@ -10,13 +10,9 @@
     "prepare": "is-ci || husky install",
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
-    "test": "lerna run test --ignore=sandbox",
-    "test:sandbox": "yarn sandbox:run:all",
+    "test": "lerna run test",
     "clean": "lerna clean",
-    "ci:publish": "lerna publish from-package -y --no-verify-access",
-    "sandbox:clean": "git checkout HEAD -- sandbox && git clean -f -d sandbox",
-    "sandbox:run:app-center-build-config": "yarn --cwd sandbox ng add @ilionx/app-center-build-config com.ilionx.dummy",
-    "sandbox:run:all": "yarn sandbox:clean && yarn sandbox:run:app-center-build-config"
+    "ci:publish": "lerna publish from-package -y --no-verify-access"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.1",
@@ -28,14 +24,13 @@
     "prettier": "2.2.1"
   },
   "workspaces": [
-    "packages/*",
-    "sandbox"
+    "packages/*"
   ],
   "bugs": {
-    "url": "https://github.com/ilionx/angular-schematics/issues"
+    "url": "https://github.com/boosten/lerna-demo/issues"
   },
-  "homepage": "https://github.com/ilionx/angular-schematics",
-  "repository": "ssh://git@github.com:ilionx/angular-schematics.git",
+  "homepage": "https://github.com/boosten/lerna-demo",
+  "repository": "ssh://git@github.com:boosten/lerna-demo.git",
   "keywords": [
     "angular",
     "schematics",
