@@ -7,7 +7,6 @@
     "url": "https://www.kevinboosten.dev/"
   },
   "scripts": {
-    "prepare": "is-ci || husky install",
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
     "test": "lerna run test",
@@ -46,8 +45,5 @@
     "extends": [
       "@commitlint/config-lerna-scopes"
     ]
-  },
-  "lint-staged": {
-    "*.{js,json,css,scss,md,ts,html}": "prettier --write"
   }
 }

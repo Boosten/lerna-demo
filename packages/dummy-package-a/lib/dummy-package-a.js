@@ -4,4 +4,5 @@ module.exports = dummyPackageA;
 
 function dummyPackageA() {
   // TODO
+  // TODO
 }
