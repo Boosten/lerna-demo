@@ -7,5 +7,4 @@ function dummyPackageA() {
   // TODO
   // TODO
   // TODO
-  // TODO
 }
