@@ -1,20 +1,11 @@
 {
-  "packages": [
-    "packages/*"
-  ],
+  "packages": ["packages/*"],
   "version": "0.2.0",
   "npmClient": "yarn",
   "useWorkspaces": true,
   "command": {
     "publish": {
       "registry": "http://localhost:4873/",
-      "createRelease": "github",
-      "allowBranch": "master",
-      "conventionalCommits": true,
-      "message": "chore(release): %s"
-    },
-    "version": {
-      "push": true,
       "createRelease": "github",
       "allowBranch": "master",
       "conventionalCommits": true,
