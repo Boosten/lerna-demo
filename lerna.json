@@ -9,7 +9,8 @@
       "createRelease": "github",
       "allowBranch": "master",
       "conventionalCommits": true,
-      "message": "chore(release): %s"
+      "message": "chore(release): %s",
+      "changelogPreset": "conventionalcommits"
     }
   }
 }
