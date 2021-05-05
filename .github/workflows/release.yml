@@ -3,12 +3,15 @@ on:
   push:
     branches:
       - 'master'
+
+concurrency:
+  group: ${{ github.head_ref }}
+  cancel-in-progress: true
+
 jobs:
   release:
     runs-on: ubuntu-latest
-    concurrency:
-      group: ${{ github.head_ref }}
-      cancel-in-progress: true
+
     steps:
       - uses: actions/checkout@v2
       - uses: fregante/setup-git-user@v1
